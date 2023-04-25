@@ -8,3 +8,10 @@ Repository of Icon libraries for PowerShell Universal apps.
 Install-Module Universal.Icons.MaterialDesign
 New-UDMaterialDesignIcon -Icon "Md123"
 ```
+
+## [Feather](https://react-icons.github.io/react-icons/icons?name=fi)
+
+```powershell
+Install-Module Universal.Icons.Feather
+New-UDFeatherIcon -Icon "FiActivity"
+```
