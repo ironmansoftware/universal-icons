@@ -4,7 +4,7 @@
     RootModule        = 'Universal.Icons.Bootstrap.psm1'
     
     # Version number of this module.
-    ModuleVersion     = '0.0.2'
+    ModuleVersion     = '0.0.3'
     
     # Supported PSEditions
     # CompatiblePSEditions = @()
@@ -13,7 +13,7 @@
     GUID              = 'a18a3b57-7f5c-4865-bd42-b9b1aefe742b'
     
     # Author of this module
-    Author            = 'Adam Driscoll'
+    Author            = 'Ironman Software'
     
     # Company or vendor of this module
     CompanyName       = 'Ironman Software'

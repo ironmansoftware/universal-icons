@@ -4,7 +4,7 @@
     RootModule        = 'Universal.Icons.Feather.psm1'
     
     # Version number of this module.
-    ModuleVersion     = '0.0.3'
+    ModuleVersion     = '0.0.4'
     
     # Supported PSEditions
     # CompatiblePSEditions = @()
@@ -13,7 +13,7 @@
     GUID              = '291e6e99-10ee-4f90-88bc-f477a33aa759'
     
     # Author of this module
-    Author            = 'Adam Driscoll'
+    Author            = 'Ironman Software'
     
     # Company or vendor of this module
     CompanyName       = 'Ironman Software'

@@ -4,7 +4,7 @@
     RootModule        = 'Universal.Icons.MaterialDesign.psm1'
     
     # Version number of this module.
-    ModuleVersion     = '0.0.1'
+    ModuleVersion     = '0.0.2'
     
     # Supported PSEditions
     # CompatiblePSEditions = @()
@@ -13,7 +13,7 @@
     GUID              = 'b00b97a0-9395-404a-abc6-5b28d527552a'
     
     # Author of this module
-    Author            = 'Adam Driscoll'
+    Author            = 'Ironman Software'
     
     # Company or vendor of this module
     CompanyName       = 'Ironman Software'

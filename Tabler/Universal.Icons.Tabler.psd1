@@ -4,7 +4,7 @@
     RootModule        = 'Universal.Icons.Tabler.psm1'
     
     # Version number of this module.
-    ModuleVersion     = '0.0.1'
+    ModuleVersion     = '0.0.2'
     
     # Supported PSEditions
     # CompatiblePSEditions = @()
@@ -13,7 +13,7 @@
     GUID              = 'be8935d2-1120-4f0a-a883-f9a88e417c79'
     
     # Author of this module
-    Author            = 'Adam Driscoll'
+    Author            = 'Ironman Software'
     
     # Company or vendor of this module
     CompanyName       = 'Ironman Software'
