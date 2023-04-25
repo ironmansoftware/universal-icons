@@ -18,7 +18,7 @@ task MaterialDesign {
 }
 
 task Feather {
-    $OutputPath = "$PSScriptRoot\MaterialDesign\output\Universal.Icons.Feather"
+    $OutputPath = "$PSScriptRoot\Feather\output\Universal.Icons.Feather"
     Remove-Item -Path $OutputPath -Force -ErrorAction SilentlyContinue -Recurse
     Remove-Item -Path "$PSScriptRoot\Feather\public" -Force -ErrorAction SilentlyContinue -Recurse	
     Set-Location "$PSScriptRoot\Feather"
