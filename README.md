@@ -25,3 +25,10 @@ Install-Module Universal.Icons.MaterialDesign
 New-UDMaterialDesignIcon -Icon "Md123"
 ```
 
+## [Tabler](https://react-icons.github.io/react-icons/icons?name=tb)
+
+```powershell
+Install-Module Universal.Icons.Tabler
+New-UDTablerIcon -Icon "Tb3DRotate"
+```
+
