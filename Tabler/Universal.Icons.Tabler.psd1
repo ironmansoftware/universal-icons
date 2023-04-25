@@ -1,16 +1,16 @@
 @{
 
     # Script module or binary module file associated with this manifest.
-    RootModule        = 'Universal.Icons.Feather.psm1'
+    RootModule        = 'Universal.Icons.Tabler.psm1'
     
     # Version number of this module.
-    ModuleVersion     = '0.0.2'
+    ModuleVersion     = '0.0.1'
     
     # Supported PSEditions
     # CompatiblePSEditions = @()
     
     # ID used to uniquely identify this module
-    GUID              = '291e6e99-10ee-4f90-88bc-f477a33aa759'
+    GUID              = 'be8935d2-1120-4f0a-a883-f9a88e417c79'
     
     # Author of this module
     Author            = 'Adam Driscoll'
@@ -22,7 +22,7 @@
     Copyright         = '(c) Ironman Software. All rights reserved.'
     
     # Description of the functionality provided by this module
-    Description       = 'Feather icons for PowerShell Universal apps.'
+    Description       = 'Tabler icons for PowerShell Universal apps.'
     
     # Minimum version of the PowerShell engine required by this module
     # PowerShellVersion = ''
@@ -61,7 +61,7 @@
     # NestedModules = @()
     
     # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-    FunctionsToExport = 'New-UDFeatherIcon'
+    FunctionsToExport = 'New-UDTablerIcon'
     
     # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
     # CmdletsToExport   = '*'
@@ -87,7 +87,7 @@
         PSData = @{
     
             # Tags applied to this module. These help with module discovery in online galleries.
-            Tags       = @("PowerShellUniversal", "App", "Feather")
+            Tags       = @("PowerShellUniversal", "App", "Tabler")
     
             # A URL to the license for this module.
             LicenseUri = 'https://github.com/ironmansoftware/universal-icons/blob/main/LICENSE'
@@ -96,7 +96,7 @@
             ProjectUri = 'https://github.com/ironmansoftware/universal-icons'
     
             # A URL to an icon representing this module.
-            IconUri    = 'https://www.ironmansoftware.com/img/ps-logo.png'
+            IconUri    = 'https://raw.githubusercontent.com/ironmansoftware/universal-icons/main/Tabler/logo.svg'
     
             # ReleaseNotes of this module
             # ReleaseNotes = ''

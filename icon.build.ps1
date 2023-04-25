@@ -55,4 +55,23 @@ task Bootstrap {
     Copy-Item $PSScriptRoot\Bootstrap\Universal.*.psm1 $OutputPath
 }
 
-task . MaterialDesign, Feather, Bootstrap
+task Tabler {
+    $OutputPath = "$PSScriptRoot\Tabler\output\Universal.Icons.Tabler"
+    Remove-Item -Path $OutputPath -Force -ErrorAction SilentlyContinue -Recurse
+    Remove-Item -Path "$PSScriptRoot\Tabler\public" -Force -ErrorAction SilentlyContinue -Recurse	
+    Set-Location "$PSScriptRoot\Tabler"
+
+    & {
+        $ErrorActionPreference = 'SilentlyContinue'
+        npm install
+        npm run build
+    }
+
+    New-Item -Path $OutputPath -ItemType Directory
+
+    Copy-Item $PSScriptRoot\Tabler\public\*.* $OutputPath
+    Copy-Item $PSScriptRoot\Tabler\Universal.*.psd1 $OutputPath
+    Copy-Item $PSScriptRoot\Tabler\Universal.*.psm1 $OutputPath
+}
+
+task . MaterialDesign, Feather, Bootstrap, Tabler
