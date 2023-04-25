@@ -4,7 +4,7 @@
     RootModule        = 'Universal.Icons.Feather.psm1'
     
     # Version number of this module.
-    ModuleVersion     = '0.0.2'
+    ModuleVersion     = '0.0.3'
     
     # Supported PSEditions
     # CompatiblePSEditions = @()
@@ -96,7 +96,7 @@
             ProjectUri = 'https://github.com/ironmansoftware/universal-icons'
     
             # A URL to an icon representing this module.
-            IconUri    = 'https://www.ironmansoftware.com/img/ps-logo.svg'
+            IconUri    = 'https://www.ironmansoftware.com/img/ps-icon.svg'
     
             # ReleaseNotes of this module
             # ReleaseNotes = ''
