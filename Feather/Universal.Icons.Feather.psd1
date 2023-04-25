@@ -96,7 +96,7 @@
             ProjectUri = 'https://github.com/ironmansoftware/universal-icons'
     
             # A URL to an icon representing this module.
-            IconUri    = 'https://www.ironmansoftware.com/img/ps-logo.png'
+            IconUri    = 'https://www.ironmansoftware.com/img/ps-logo.svg'
     
             # ReleaseNotes of this module
             # ReleaseNotes = ''
