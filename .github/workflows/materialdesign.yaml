@@ -1,0 +1,22 @@
+name: Publish MaterialDesign
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+    build:
+      name: Build
+      runs-on: [self-hosted, builder]
+      steps:
+        - uses: actions/checkout@v3
+          with:
+            fetch-depth: 0
+        - name: Install InvokeBuild
+          run: Install-Module InvokeBuild
+          shell: pwsh
+        - name: Build
+          run: Invoke-Build -Task MaterialDesign
+          shell: pwsh
+        - name: Publish
+          run: Publish-Module -Path .\MaterialDesign\output\Universal.Icons.MaterialDesign -NuGetApiKey $ENV:NUGETAPIKEY -Repository PSGallery -Verbose
+          shell: pwsh
+          env:
+            NUGETAPIKEY: ${{ secrets.NuGetApiKey }}
