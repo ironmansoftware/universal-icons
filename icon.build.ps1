@@ -36,4 +36,23 @@ task Feather {
     Copy-Item $PSScriptRoot\Feather\Universal.*.psm1 $OutputPath
 }
 
-task . MaterialDesign, Feather
+task Bootstrap {
+    $OutputPath = "$PSScriptRoot\Bootstrap\output\Universal.Icons.Bootstrap"
+    Remove-Item -Path $OutputPath -Force -ErrorAction SilentlyContinue -Recurse
+    Remove-Item -Path "$PSScriptRoot\Bootstrap\public" -Force -ErrorAction SilentlyContinue -Recurse	
+    Set-Location "$PSScriptRoot\Bootstrap"
+
+    & {
+        $ErrorActionPreference = 'SilentlyContinue'
+        npm install
+        npm run build
+    }
+
+    New-Item -Path $OutputPath -ItemType Directory
+
+    Copy-Item $PSScriptRoot\Bootstrap\public\*.* $OutputPath
+    Copy-Item $PSScriptRoot\Bootstrap\Universal.*.psd1 $OutputPath
+    Copy-Item $PSScriptRoot\Bootstrap\Universal.*.psm1 $OutputPath
+}
+
+task . MaterialDesign, Feather, Bootstrap

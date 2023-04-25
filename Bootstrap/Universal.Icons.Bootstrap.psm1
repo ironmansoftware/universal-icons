@@ -1,19 +1,19 @@
 $IndexJs = Get-ChildItem "$PSScriptRoot\index.*.bundle.js"
 $AssetId = [UniversalDashboard.Services.AssetService]::Instance.RegisterAsset($IndexJs.FullName)
 
-function New-UDFeatherIcon {
+function New-UDBootstrapIcon {
     <#
     .SYNOPSIS
-    Feather icons for PowerShell Universal apps.
+    Bootstrap icons for PowerShell Universal apps.
     
     .DESCRIPTION
-    Feather icons for PowerShell Universal apps.
+    Bootstrap icons for PowerShell Universal apps.
     
     .PARAMETER Id
     The ID for this component. If not specified, a GUID will be generated.
     
     .PARAMETER Icon
-    The name of the icon to use. See https://react-icons.github.io/react-icons/icons?name=fi for icons.
+    The name of the icon to use. See https://react-icons.github.io/react-icons/icons?name=bs for icons.
     
     .PARAMETER Style
     A hashtable for CSS styles to apply.
@@ -22,10 +22,10 @@ function New-UDFeatherIcon {
     A CSS class to apply to this component.
     
     .EXAMPLE
-    New-UDFeatherIcon -Icon 'FiActivity'
+    New-UDBootstrapIcon -Icon 'BsFillAlarmFill'
 
     .EXAMPLE
-    New-UDFeatherIcon -Icon 'FiActivity' -Style @{
+    New-UDBootstrapIcon -Icon 'BsFillAlarmFill' -Style @{
         FontSize = '100px'
     }
     #>#
@@ -44,7 +44,7 @@ function New-UDFeatherIcon {
         @{
             assetId   = $AssetId 
             isPlugin  = $true 
-            type      = "ud-fiicon"
+            type      = "ud-bsicon"
             id        = $Id
 
             icon      = $icon
