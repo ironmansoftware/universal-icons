@@ -10,7 +10,7 @@ jobs:
           with:
             fetch-depth: 0
         - name: Install InvokeBuild
-          run: Install-Module InvokeBuild
+          run: Install-Module InvokeBuild -Force
           shell: pwsh
         - name: Build
           run: Invoke-Build -Task MaterialDesign
